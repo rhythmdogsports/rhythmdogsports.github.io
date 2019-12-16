@@ -25,3 +25,5 @@ fields:
   type: image_gallery
   config: {}
   label: In Post Images
+pages:
+- _posts/first-post.md
