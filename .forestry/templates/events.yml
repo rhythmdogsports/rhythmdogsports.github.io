@@ -1,0 +1,108 @@
+---
+label: Events
+hide_body: false
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  hidden: true
+  default: event
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: Name of the event
+- name: event_date
+  type: datetime
+  label: Event Date
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  description: The date of your event
+- name: event_rsvp_link
+  type: text
+  config:
+    required: false
+  label: Event RSVP Link
+  description: Link to where people can RSVP to the event (e.g. Meetup, Eventbrite)
+- name: featured_speaker
+  type: text
+  config:
+    required: false
+  label: Featured Speaker
+- name: event_short_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Event Short Description
+  description: what's happening
+- name: at_gaslight_
+  type: boolean
+  label: At Gaslight?
+  description: Is the event happening at Gaslight?
+  default: true
+- name: alternative_address
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Alternative Address
+  description: If not at Gaslight, address of event
+- name: recurring_event
+  type: boolean
+  label: Reacquiring Event?
+  description: Is this a reacquiring event?
+- name: event_series
+  type: select
+  default: Not Reoccurring
+  config:
+    required: false
+    options:
+    - Tech Cafeteria
+    - Friday Morning Coffee
+    - Dribbble Meetup
+    - Not Reoccurring
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  description: Select the reoccurring Gaslight event.
+  label: Event Series
+- name: featured_event
+  type: boolean
+  label: Featured Event
+  description: 'Prominently display event details with an image '
+- name: featured_event_image
+  type: file
+  config:
+    maxSize: 250
+  label: Featured Event Image
+  description: Image to show off event
+- name: event_images
+  type: image_gallery
+  config: {}
+  label: Event Images
+pages:
+- _event/kids-tech-day.md
+- _event/friday-coffee.md
+- _event/tech-cafeteria-agile-distilled.md
+- _event/cincinnati-javascript-user-group.md
+- _event/gaslight-signature-event-manufacturing-panel.md
+- _event/cincy-elixir-meetup.md
+- _event/creativemornings-1.md
+- _event/cincinnati-ruby-brigade-1.md
+- _event/cincinnati-elixir-meetup.md
+- _event/cincinnati-ruby-brigade.md

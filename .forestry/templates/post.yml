@@ -1,0 +1,391 @@
+---
+label: Post
+hide_body: false
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  hidden: true
+  default: post
+- name: post_title
+  type: text
+  config:
+    required: false
+  label: Post Title
+  description: This is the title of your blog post.
+- name: post_author
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Dustin Kocher
+    - Katie Pohlman
+    - Steve Hennegan
+    - Zack Kayser
+    - Beau Heubach
+    - Cam Carter
+    - James Taylor
+    - Lauren Lauzau
+    - Brandi Emerson
+    - Doug Alcorn
+    - Ryan Arthur
+    - Bill Barnett
+    - Tammy Barnett
+    - Kati Best
+    - Alex Heflin
+    - Steve Hennegan
+    - Scott Hoffman
+    - Jeremy Kahne
+    - Peter Kananen
+    - Brian Kockritz
+    - Jimmy Lauzau
+    - Tim Mecklem
+    - Haley Moore
+    - Chris Nelson
+    - Sanjay Nelson
+    - Jon Prell
+    - Tyler Shipe
+    - James Smith
+    - Ben Stafford
+    - John Stamates
+    - Alex Tuley
+    - Scott Wiggins
+    - Omar Suriel
+    - Chris Moore
+    - Mitch Lloyd
+    - Joel Turnbull
+    - Dewayne Greenwood
+    - Kevin Rockwood
+    - Kristin Lasita
+    - Michael Guterl
+    - Laurel Nock
+    - Michelle Taute
+    - Ryan Finke
+    - Tim Kindberg
+    - Jim Anders
+    - Joshua Rose
+    - Alex Padgett
+    - Alan Audette
+    - Chip Eyler
+    - Zack Freeman
+    - Lauren Woodrick
+    - Geoff Lane
+    - Kenny Glenn
+    - Dennis Najjar
+    - Katherine Tornwall
+    - Mark Hannah
+    - Patrick Hildebrandt
+    - Bailey Miller
+    - Jon Egeland
+    - Myles Gearon
+    - Sam Bigelow
+    - Sasha Korotkov
+    - Anna Durham
+    - Mark Easterling
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Post Author
+  description: Select the Author of this post
+- name: current_gaslighter
+  type: boolean
+  label: Current Gaslighter
+  default: true
+- name: categories
+  type: tag_list
+  default:
+  - Development
+  - Design
+  - Business
+  label: Post Categories
+  description: Assign all applicable post types.
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: Assign all applicable post types.
+- name: publish_date
+  type: datetime
+  label: Publish Date
+  description: Date the post was published
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: feature_post_image
+  type: file
+  config:
+    maxSize: '200'
+  label: Post Feature Image
+  description: Feature Image fir the Post Image
+- name: post_images
+  type: image_gallery
+  config: {}
+  label: Post Images
+  description: images for the body of the post
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: permalink
+  hidden: true
+  default: "/blog/:slug"
+pages:
+- '_posts/Custom Software Development vs. Off-the-Shelf: How to Choose a Winner.md'
+- _posts/Goal Setting and Defining Focus.md
+- _posts/2019-10-25-languages-we-love-elixir.md
+- _posts/2019-06-27-gaslight-podcast-number-13-introducing-michael-guterl.md
+- _posts/2019-06-26-building-an-employee-owned-company-with-ry-walker.md
+- _posts/2019-06-27-gaslight-podcast-number-5-jim-weirich-on-rake-staying-sharp-and-testing.md
+- _posts/2019-06-26-gaslight-podcast-number-1-client-side-development-with-chris-nelson.md
+- _posts/2019-06-26-feedback-loops.md
+- _posts/2019-06-27-teaching-ruby-on-rails.md
+- _posts/2019-06-26-dream-jobs-with-chris-glass.md
+- _posts/2019-06-27-managing-software-teams-with-joe-pantuso.md
+- _posts/2019-06-27-gaslight-podcast-number-2-consensus-decision-making-and-turbo-links-with-steve-klabnik.md
+- _posts/2019-06-27-ruby-culture-with-dave-thomas.md
+- _posts/2019-06-26-ember-dot-js-with-yehuda-katz-and-tom-dale.md
+- _posts/2019-06-27-gaslight-podcast-number-7-software-project-guidance-with-doug-alcorn-part-2.md
+- _posts/2019-06-26-eve-online-development-with-ccp-ripley.md
+- _posts/2019-06-27-gaslight-podcast-number-15-software-entrepreneurship-with-joe-pantuso.md
+- _posts/2019-06-27-gaslight-podcast-number-14-github-culture-with-chris-wanstrath.md
+- _posts/2019-06-27-gaslight-podcast-number-12-benefit-corporations.md
+- _posts/2019-06-27-gaslight-podcast-number-8-girl-develop-it.md
+- _posts/2019-06-27-southwest-ohio-give-camp.md
+- _posts/2019-06-27-gaslight-podcast-number-16-qcmerge.md
+- _posts/2019-06-27-gaslight-podcast-number-11-the-brandery-with-robert-mcdonald.md
+- _posts/2019-06-27-gaslight-podcast-number-9-digital-doodles-with-ryan-arthur.md
+- _posts/2019-06-27-kanban-smackdown-part-2.md
+- _posts/2019-06-27-gaslight-podcast-number-6-software-project-guidance-with-doug-alcorn-part-1.md
+- _posts/2019-06-27-software-patents.md
+- _posts/2019-06-27-gaslight-podcast-number-4-roadtrippers-dot-com-with-james-fisher.md
+- _posts/2019-06-26-developer-communities-with-leah-silber.md
+- _posts/2019-06-27-gaslight-podcast-number-3-localizeit-with-jeremy-siefkas.md
+- _posts/2019-06-26-business.md
+- _posts/2019-06-27-kanban-smackdown-part-1.md
+- _posts/2019-06-27-gaslight-podcast-number-10-corey-haines-via-codemash.md
+- _posts/2019-06-26-designers-and-developers.md
+- _posts/2019-09-20-refactoring-patterns-in-elixir-replace-conditional-with-polymorphism-via-protocols-part-2.md
+- _posts/Why we love clients who (literally) look over our shoulder.md
+- _posts/2019-06-27-im-speaking-at-windy-city-rails.md
+- _posts/2019-06-27-horsemask-and-didgeridoo-what-more-in-life-could-you-want.md
+- _posts/2019-06-27-how-to-remove-all-elements-from-a-meteor-collection.md
+- _posts/2019-06-27-what-feature-do-we-build-next-our-approach-to-software-release-planning.md
+- _posts/2019-06-27-why-not-pivotal-tracker.md
+- _posts/2019-06-26-10-totally-surprising-things-about-people-who-work-at-gaslight.md
+- _posts/2019-06-26-9-tech-tips-and-tricks-to-skyrocket-your-productivity.md
+- _posts/2019-06-27-how-to-get-your-start-as-an-entrepreneur.md
+- _posts/2019-06-27-recognizing-mvc-myopia-in-a-rails-application.md
+- _posts/2019-06-26-cincyrb-cloud9-and-action-dot-io.md
+- _posts/2019-06-27-the-michigan-lean-startup-conference-an-attendees-perspective.md
+- _posts/2019-06-27-michael-guterl-nibbles-and-gorillas.md
+- _posts/2019-06-27-how-i-sold-gaslight-on-our-new-brand.md
+- _posts/2019-06-26-client-side-ids-with-ember-data.md
+- _posts/2019-06-27-qcmerge-holy-rollers-with-mark-treas.md
+- _posts/2019-06-27-raspberry-pi-plus-ruby-on-rails-plus-heroku-star-students-equals-awesome.md
+- _posts/2019-06-27-mobile-web-apps-are-we-there-yet.md
+- _posts/2019-06-26-easier-backbone-form-views-with-backtastic.md
+- _posts/2019-06-26-building-angularjs-forms-with-json-schema.md
+- _posts/2019-06-27-new-york-tech-meetup.md
+- _posts/2019-06-26-6-ways-to-remove-pain-from-feature-testing-in-ruby-on-rails.md
+- _posts/2019-06-26-better-code-design-through-pictures.md
+- _posts/2019-06-26-cocoapods-and-you-a-primer-for-the-uninformed.md
+- _posts/2019-06-27-more-about-gaslight-less-about-software.md
+- _posts/2019-06-27-happy-gaslighters-happy-clients.md
+- _posts/2019-06-27-living-the-dream-with-jruby.md
+- _posts/2019-06-26-burlington-ruby-conference-talk-how-to-consume-lots-of-data.md
+- _posts/2019-06-27-training-resources-for-folks-getting-started-on-the-web.md
+- _posts/2019-06-26-a-case-for-1password.md
+- _posts/2019-06-27-were-presenting-at-codemash.md
+- _posts/2019-06-27-how-we-sell.md
+- _posts/2019-06-27-how-to-succeed-in-open-source-in-ways-you-havent-considered-yet.md
+- _posts/2019-06-27-what-a-painful-downswing-taught-me-about-sales.md
+- _posts/2019-06-27-qcmerge-finding-your-brands-voice-with-sara-morgan.md
+- _posts/2019-06-27-how-to-ship-a-cocoapod.md
+- _posts/2019-06-26-book-club-growing-object-oriented-software-guided-by-tests.md
+- _posts/2019-06-26-creating-awesome-new-developers-dev-bootcamp-visit.md
+- _posts/2019-06-27-storytelling-through-video.md
+- _posts/2019-06-27-how-to-be-opinionated-without-turning-into-the-office-a-star-star-hole.md
+- _posts/2019-06-26-cincijs-javascript-and-azure-mobile-services.md
+- _posts/2019-06-27-portrait-of-the-artist-tammy-gambrel.md
+- _posts/2019-06-27-whats-chris-nelson-been-up-to.md
+- _posts/2019-06-26-cincijs-lessons-from-two-years-of-backbone-dot-js.md
+- _posts/2019-06-27-technology-is-not-one-size-fits-all.md
+- _posts/2019-06-27-seasons-greetings-from-your-friends-at-gaslight.md
+- _posts/2019-06-27-the-intersection-of-design-and-development.md
+- _posts/2019-06-26-announcing-the-cwt-study-group.md
+- _posts/2019-06-27-michael-guterl-is-now-a-gaslighter.md
+- _posts/2019-06-27-gaslighters-breakin-in-the-shiny-new-cod-pasting-studio.md
+- _posts/2019-06-26-chaminade-julienne-summer-stemm-camp.md
+- _posts/2019-06-26-does-coffeescript-have-a-future.md
+- _posts/2019-06-26-4-ways-to-transform-your-office-into-a-video-studio.md
+- _posts/2019-06-27-measuring-engagement-with-ruby.md
+- _posts/2019-06-27-small-sips-of-gulp-dot-js-4-steps-to-reduce-complexity.md
+- _posts/2019-06-27-os-x-spring-nuking.md
+- _posts/2019-06-26-angular-backed-svgs.md
+- _posts/2019-06-27-with-purpose.md
+- _posts/2019-06-27-testing-behavior-vs-testing-implementation.md
+- _posts/2019-06-26-customer-written-cukes.md
+- _posts/2019-06-26-block-element-modifier.md
+- _posts/2019-06-27-how-an-introduction-to-ruby-on-rails-class-saved-my-work-life.md
+- _posts/2019-06-27-my-qcmerge-inspired-todo-list.md
+- _posts/2019-06-27-why-every-designer-should-make-friends-with-developers.md
+- _posts/2019-06-27-welcome-michelle-taute.md
+- _posts/2019-06-27-the-best-resources-for-learning-elixir.md
+- _posts/2019-06-27-how-to-acheive-the-content-scale-effect.md
+- _posts/2019-06-26-announcing-our-first-video-workshop-backbone-and-ember.md
+- _posts/2019-06-27-using-local-libraries-with-cocoapods.md
+- _posts/2019-06-27-they-should-call-it-getcamp.md
+- _posts/2019-06-27-how-we-designed-a-responsive-email-newsletter.md
+- _posts/2019-06-26-accessing-models-with-confidence-in-cucumber-specs-with-factory-girl.md
+- _posts/2019-06-26-breaking-open-gridlocked-rails-applications.md
+- _posts/2019-06-27-why-we-wrote-a-blog.md
+- _posts/2019-06-27-the-brave-new-world-of-empowered-people.md
+- _posts/2019-06-27-paidsimply-lean-canvas.md
+- _posts/2019-06-27-Web apps are dead, long live web apps.md
+- _posts/2019-06-26-5-signs-your-business-needs-custom-software.md
+- _posts/2019-06-26-from-skeptic-to-convert-an-inside-look-at-the-2014-gaslight-retreat.md
+- _posts/2019-06-27-how-to-create-a-configurable-angularjs-directive.md
+- _posts/2019-06-27-lets-talk-about-reasonable-budgets.md
+- _posts/2019-06-27-pryme-time.md
+- _posts/2019-06-27-how-we-handled-the-problem-of-js-date-slash-time-equality.md
+- _posts/2019-06-27-the-web-is-a-hypermedia-api.md
+- _posts/2019-06-27-i-survived-dev-bootcamp.md
+- _posts/2019-05-23-react-hooks-at-a-glance.md
+- _posts/2019-06-27-im-speaking-at-wicked-good-ruby.md
+- _posts/2019-06-27-rails-rumble-recap.md
+- _posts/2019-06-27-scraping-by-dev-tips-for-designers.md
+- _posts/2019-06-27-how-we-trello.md
+- _posts/2019-06-26-a-case-for-coffeescript.md
+- _posts/2019-06-27-learning-from-failure-what-we-do-when-a-client-project-goes-wrong.md
+- _posts/2019-06-26-cincinnati-web-tech-study-group-week-1.md
+- _posts/2019-06-26-3-ways-your-web-app-is-different-than-your-website.md
+- _posts/2019-06-26-angular-plus-firebase-is-rad.md
+- _posts/2019-06-27-javascript-jquery-and-angular-training-and-why-sharing-is-important-to-gaslight.md
+- _posts/2019-06-27-inside-dev-bootcamp-what-i-learned-from-6-weeks-of-teaching.md
+- _posts/2019-06-27-seasons-greetings-from-gaslight.md
+- _posts/2019-06-27-midpoint-does-not-disappoint.md
+- _posts/2019-06-27-you-dont-know-what-software-you-need-until-you-build-it.md
+- _posts/2019-06-27-introducing-gaslights-improved-office.md
+- _posts/2019-06-27-im-speaking-at-railsconf-2014.md
+- _posts/2019-06-26-announcing-twallaby.md
+- _posts/2019-06-27-visiting-a-client-in-indiana.md
+- _posts/2019-06-27-gaslight-retreat-2012.md
+- _posts/2019-06-26-backbone-dot-js-views-done-the-right-way.md
+- _posts/2019-06-27-making-our-users-feel-great-the-psychology-of-making-things-easy-to-use.md
+- _posts/2019-06-27-what-community-has-done-for-me.md
+- _posts/2019-06-27-july-slash-august-video-wrapup.md
+- _posts/2019-06-27-january-cincycocoadev-getting-started-with-cocoapods.md
+- _posts/2019-06-27-getting-started-with-protractor-and-page-objects-for-angularjs-e2e-testing.md
+- _posts/2019-06-26-cincyrb-ruby-2-dot-0-with-chris-gaffney.md
+- _posts/2019-06-26-cincijs-how-i-learned-ember-with-jeremy-mack.md
+- _posts/2019-06-26-brooklyn-beta-breaks-wide-open.md
+- _posts/2019-06-27-intro-to-javascript-game-development.md
+- _posts/2019-06-26-40-plus-resources-for-building-robust-rails-applications.md
+- _posts/2019-06-26-a-journey-into-the-depths-of-public-speaking.md
+- _posts/2019-06-27-roll-your-own-html5-web-components-with-vanilla-js.md
+- _posts/2019-06-27-planning-an-agile-project.md
+- _posts/2019-06-27-the-problem-with-novel-user-interfaces.md
+- _posts/2019-06-27-qcmerge-the-big-red-startup-machine-with-tim-falls.md
+- _posts/2019-06-27-how-to-kickoff-a-design-project-and-generate-excitement-without-mockups.md
+- _posts/2019-06-26-experiential-learning.md
+- _posts/2019-06-21-post-givecamp-reflections.md
+- _posts/2019-06-27-real-views-with-draper.md
+- _posts/2019-06-26-announcing-web-school-cincy.md
+- _posts/2019-06-27-i-like-pry-but-dot-dot-dot.md
+- _posts/2019-06-26-5-ways-to-know-if-you-own-high-quality-code.md
+- _posts/2019-06-27-this-week-at-gaslight.md
+- _posts/2019-06-27-why-i-chose-angularjs.md
+- _posts/2019-06-26-bicycle-bicycle.md
+- _posts/2019-06-26-features-matter-to-users-more-than-stories.md
+- _posts/2019-06-27-what-the-us-government-learned-about-software-from-the-healthcare-dot-gov-failure-and-some-of-us-already-knew.md
+- _posts/2019-06-27-why-we-charge-a-fixed-weekly-price-to-build-software.md
+- _posts/2019-06-27-september-at-gaslight.md
+- _posts/2019-06-27-mining-for-data-gold-what-we-learned-from-our-blog-content-audit.md
+- _posts/2019-06-26-an-autosave-pattern-for-ember-and-ember-data.md
+- _posts/2019-06-27-newb-teacher-my-adventures-at-dbc-chicago.md
+- _posts/2019-06-27-qcmerge-chris-glass.md
+- _posts/2019-06-26-enfocus-clojure-and-clojurescript.md
+- _posts/2019-06-26-3-reasons-why-design-is-critical-to-your-product.md
+- _posts/2019-06-27-the-benefits-of-approaching-problems-with-a-beginners-mind.md
+- _posts/2019-06-27-hows-it-going.md
+- _posts/2019-06-27-making-culture-visible-the-gut-check-exercise.md
+- _posts/2019-06-27-happiness-matters.md
+- _posts/2019-06-27-letting-go-the-next-phase-of-the-gaslight-blog.md
+- _posts/2019-06-26-encouraging-gender-diversity-3-reasons-why-qcmerge-attracts-a-different-audience.md
+- _posts/2019-06-27-World Congress of Engineering Asset Management.md
+- _posts/2019-06-27-qcmerge-cincinnatis-brewing-heritage-with-greg-hardman.md
+- _posts/2019-06-27-rethinking-our-approach-to-teaching-programming.md
+- _posts/2019-06-26-cincyrb-rubber-with-jim-anders.md
+- _posts/2019-06-27-is-this-the-end-for-paidsimply.md
+- _posts/2019-06-26-forms-and-json-in-ios.md
+- _posts/2019-06-27-quality-what-does-it-even-mean.md
+- _posts/2019-06-27-how-i-learned-to-love-cincinnati.md
+- _posts/2019-06-26-adding-a-share-by-email-button-to-your-tumblr-posts.md
+- _posts/2019-06-27-learning-ruby-for-beginners-with-try-ruby.md
+- _posts/2019-06-27-the-smartest-things-weve-read-lately-plus-8-irresistible-cat-gifs.md
+- _posts/2019-06-26-elixirconf-talk-writing-command-line-applications-with-elixir.md
+- _posts/2019-06-27-objective-cs-designated-initializer-pattern.md
+- _posts/2019-06-27-vim-plus-tmux-a-perfect-match.md
+- _posts/2019-06-27-structuring-css-on-the-filesystem.md
+- _posts/2019-06-26-do-i-have-to-pay-you-forever-to-maintain-this-app.md
+- _posts/2019-06-27-playing-the-name-game.md
+- _posts/2019-06-27-retreat-wrap-up.md
+- _posts/2019-06-27-why-i-chose-zurb-foundation.md
+- _posts/2019-06-27-how-do-i-make-an-animated-gif.md
+- _posts/2019-06-27-paidsimply-progress-report-aug-3-2012.md
+- _posts/2019-06-27-upcoming-events.md
+- _posts/2019-06-27-im-speaking-at-cocoaconf-columbus.md
+- _posts/2019-06-26-a-big-welcome-to-our-newest-gaslighter-geoff-lane.md
+- _posts/2019-06-27-how-we-cuke.md
+- _posts/2019-06-26-4-lessons-any-struggling-business-can-learn-from-kitchen-nightmares.md
+- _posts/2019-06-27-home-sweet-office.md
+- _posts/2019-06-26-ember-resources.md
+- _posts/2019-06-26-why-i-became-a-developer-after-studying-design.md
+- _posts/2019-06-26-cookies-design-and-aha-moments-in-cincinnati-and-beyond.md
+- _posts/2019-06-27-welcome-jim-and-dave.md
+- _posts/2019-06-26-alex-padgett-is-a-gaslighter.md
+- _posts/2019-06-26-cincycocoadev-rubymotion-with-jim-weirich.md
+- _posts/2019-06-27-maintainable-and-scalable-systems-with-rails-engines.md
+- _posts/2019-06-27-were-presenting-at-the-cincinnati-day-of-agile.md
+- _posts/2019-06-27-indie-game-the-movie.md
+- _posts/2019-06-27-mitigating-risk-through-technical-spikes.md
+- _posts/2019-06-26-command-line-apps-with-elixir.md
+- _posts/2019-06-27-video-from-cincy-copter-event.md
+- _posts/2019-06-27-intermediate-ember-controller-concepts.md
+- _posts/2019-06-26-cincijs-should-this-button-be-blue-simple-design-considerations-to-make-your-product-not-suck.md
+- _posts/2019-06-27-how-to-drive-a-serverless-soa-mashup-directly-in-the-browser.md
+- _posts/2019-06-27-style-guides-or-how-i-learned-to-stop-worrying-and-love-the-grid.md
+- _posts/2019-06-27-guidelines-for-effective-pair-programming.md
+- _posts/2019-06-26-angular-the-component-orientedness-it-makes-me-happy-and-why.md
+- _posts/2019-06-26-3-lessons-learned-from-offf-cincinnati.md
+- _posts/2019-06-27-kenny-glenn-is-a-gaslighter.md
+- _posts/2019-06-27-qcmerge-maximizing-development-dollars-with-doug-alcorn.md
+- _posts/2019-06-27-qcmerge-community-with-nate-westheimer.md
+- _posts/2019-06-27-the-correct-cucumber-regex-for-matching-text-in-quotes.md
+- _posts/2019-06-27-what-ive-learned-from-third-party-javascript.md
+- _posts/2019-06-27-this-month-at-gaslight-july-2014.md
+- _posts/2019-06-27-how-big-is-a-story.md
+- _posts/2019-06-27-qcmerge-intro-to-rails.md
+- _posts/2019-06-26-activeadmin-is-the-new-spreadsheet.md
+- _posts/2019-06-27-why-simpler-is-better-for-tracking-project-health.md
+- _posts/2019-06-26-cincijs-angularjs-with-mike-ball.md
+- _posts/2019-06-27-how-to-time-travel-your-data.md
+- _posts/2019-06-27-the-cincinnati-web-tech-study-group-a-learning-experience.md
+- _posts/2019-06-26-cincyrb-commodity-market-analysis-with-doug-alcorn.md
+- _posts/2019-06-26-9-lessons-web-designers-can-learn-from-painting-portraits.md
+- _posts/2019-06-26-cincyrb-threads-events-and-drones-with-jim-weirich.md
+- _posts/2019-06-27-qcmerge-craft-time-with-javascript-with-sara-chipps.md
+- _posts/2019-06-27-qcmerge-2012-recap.md
+- _posts/2019-06-26-gaslight-at-the-game.md
+- _posts/2019-06-27-qcmerge-a-work-in-process-with-ample.md
+- _posts/2019-06-27-video-wrap-up.md
+- _posts/2019-06-27-jim-weirich-on-decoupling-from-rails.md
+- _posts/2019-06-27-its-all-the-gaslighters.md
+- _posts/2019-06-27-jim-weirich.md
