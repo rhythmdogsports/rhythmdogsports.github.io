@@ -25,5 +25,10 @@ fields:
   type: image_gallery
   config: {}
   label: In Post Images
+- name: slug
+  type: text
+  config:
+    required: false
+  label: slug
 pages:
 - _posts/2019-12-16-first-post.md
