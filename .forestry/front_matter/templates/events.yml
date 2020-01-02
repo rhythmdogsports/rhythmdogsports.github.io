@@ -1,4 +1,27 @@
 ---
 label: Events
 hide_body: false
-fields: []
+fields:
+- name: event_name
+  type: text
+  config:
+    required: false
+  label: Event Name
+- name: description_
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: 'Description '
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
